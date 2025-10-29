@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seleccione su Carrera - ISP Nº5</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Seleccione su Carrera - ISP Nº5 "Perito F. Moreno"</h1>
+    <a href="situacion.html" class="back-arrow">&#8592; Volver</a>
+    <img src="logo.png" alt="Logo ISP Nº5" class="logo" />
+  </header>
+
+  <main class="menu-container">
+    <div class="form-container">
+      <label for="carrera">Carrera:</label>
+      <select id="carrera">
+        <option value="" disabled selected>-- Seleccione su carrera --</option>
+        <option>Profesorado de Educación Física - Plan N° 696/01</option>
+        <option>Profesorado de Educación Tecnológica - Plan N° 2719/14</option>
+        <option>Profesorado de Educación Inicial - Plan N° 529/09</option>
+        <option>Profesorado de Educación Primaria - Plan N° 528/09</option>
+        <option>Profesorado de Inglés para Educación Secundaria - Plan N° 696/01</option>
+        <option>Profesorado de Educación Secundaria en Biología - Plan N° 2090/15</option>
+        <option>Profesorado de Educación Secundaria en Lengua y Literatura - Plan N° 514/18</option>
+        <option>Profesorado de Educación Secundaria en Ciencias de la Administración - Plan N° 2090/15</option>
+        <option>Profesorado de Educación Especial con orientación en Discapacidad Intelectual - Plan N° 260/03</option>
+        <option>Técnico Superior en Gestión de las Organizaciones - Plan N° 378/16</option>
+      </select>
+
+      <button class="enviar" onclick="continuar()">Continuar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Instituto Superior del Profesorado N° 5 - Cañada de Gómez</p>
+  </footer>
+
+  <script>
+    function continuar() {
+      const select = document.getElementById('carrera');
+      if(select.value === "") {
+        alert("Por favor seleccione una carrera antes de continuar.");
+      } else {
+        // Aquí se redirigiría a la página correspondiente, ejemplo:
+        alert("Seleccionó: " + select.value);
+        // window.location.href = "proxima_pagina.html";
+      }
+    }
+  </script>
+</body>
+</html>

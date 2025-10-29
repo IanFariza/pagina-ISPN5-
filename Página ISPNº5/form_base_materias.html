@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario Situación de Cursada - ISP Nº5</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #777;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    th {
+      background-color: #2b3ea8;
+      color: white;
+    }
+    td:first-child {
+      text-align: left;
+      font-weight: bold;
+    }
+    .radio-group {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Formulario Situación de Cursada - ISP Nº5</h1>
+    <a href="selec_carr_1º.html" class="back-arrow">&#8592; Volver</a>
+    <img src="logo.png" alt="Logo ISP Nº5" class="logo" />
+  </header>
+
+  <main class="menu-container">
+    <div class="form-container">
+      <form id="situacionForm">
+        <!-- Datos personales -->
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" required>
+
+        <label for="confirmCorreo">Confirmar correo:</label>
+        <input type="email" id="confirmCorreo" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" required>
+
+        <label for="telefono">Nro de celular o teléfono:</label>
+        <input type="text" id="telefono">
+
+        <label for="domicilio">Domicilio y localidad:</label>
+        <input type="text" id="domicilio">
+
+        <!-- Tabla de materias -->
+        <table>
+          <thead>
+            <tr>
+              <th>Materia</th>
+              <th>Presencial</th>
+              <th>Semi Presencial</th>
+              <th>Libre</th>
+              <th>No cursaré</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Repetir este tr para cada materia -->
+            <tr>
+              <td>Materia 1</td>
+              <td><input type="radio" name="materia1" value="Presencial" required></td>
+              <td><input type="radio" name="materia1" value="Semi presencial"></td>
+              <td><input type="radio" name="materia1" value="Libre"></td>
+              <td><input type="radio" name="materia1" value="Sin cursar"></td>
+            </tr>
+            <tr>
+              <td>Materia 2</td>
+              <td><input type="radio" name="materia2" value="Presencial" required></td>
+              <td><input type="radio" name="materia2" value="Semi presencial"></td>
+              <td><input type="radio" name="materia2" value="Libre"></td>
+              <td><input type="radio" name="materia2" value="Sin cursar"></td>
+            </tr>
+            <tr>
+              <td>Materia 3</td>
+              <td><input type="radio" name="materia3" value="Presencial" required></td>
+              <td><input type="radio" name="materia3" value="Semi presencial"></td>
+              <td><input type="radio" name="materia3" value="Libre"></td>
+              <td><input type="radio" name="materia3" value="Sin cursar"></td>
+            </tr>
+            <tr>
+              <td>Materia 4</td>
+              <td><input type="radio" name="materia4" value="Presencial" required></td>
+              <td><input type="radio" name="materia4" value="Semi presencial"></td>
+              <td><input type="radio" name="materia4" value="Libre"></td>
+              <td><input type="radio" name="materia4" value="Sin cursar"></td>
+            </tr>
+            <tr>
+              <td>Materia 5</td>
+              <td><input type="radio" name="materia5" value="Presencial" required></td>
+              <td><input type="radio" name="materia5" value="Semi presencial"></td>
+              <td><input type="radio" name="materia5" value="Libre"></td>
+              <td><input type="radio" name="materia5" value="Sin cursar"></td>
+            </tr>
+            <tr>
+              <td>Materia 6</td>
+              <td><input type="radio" name="materia6" value="Presencial" required></td>
+              <td><input type="radio" name="materia6" value="Semi presencial"></td>
+              <td><input type="radio" name="materia6" value="Libre"></td>
+              <td><input type="radio" name="materia6" value="Sin cursar"></td>
+            </tr>
+            <tr>
+              <td>Materia 7</td>
+              <td><input type="radio" name="materia7" value="Presencial" required></td>
+              <td><input type="radio" name="materia7" value="Semi presencial"></td>
+              <td><input type="radio" name="materia7" value="Libre"></td>
+              <td><input type="radio" name="materia7" value="Sin cursar"></td>
+            </tr>
+            <tr>
+              <td>Materia 8</td>
+              <td><input type="radio" name="materia8" value="Presencial" required></td>
+              <td><input type="radio" name="materia8" value="Semi presencial"></td>
+              <td><input type="radio" name="materia8" value="Libre"></td>
+              <td><input type="radio" name="materia8" value="Sin cursar"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="enviar" type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Instituto Superior del Profesorado N° 5 - Cañada de Gómez</p>
+  </footer>
+
+  <script>
+    document.getElementById('situacionForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const correo = document.getElementById('correo').value;
+      const confirmCorreo = document.getElementById('confirmCorreo').value;
+
+      if(correo !== confirmCorreo){
+        alert('Los correos no coinciden.');
+        return;
+      }
+
+      alert('Formulario listo para enviar.'); 
+      // Aquí luego se agregará la lógica para enviar el formulario
+    });
+  </script>
+</body>
+</html>

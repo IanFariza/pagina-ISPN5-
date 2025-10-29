@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscripciones Ingresantes - ISP Nº5</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-arrow">⬅ Volver</a>
+    <h2>Solicitud de inscripción ciclo lectivo 2025</h2>
+    <img src="logo.png" alt="Logo ISP Nº5" class="logo" />
+  </header>
+
+  <main class="form-container">
+    <p><strong>1° Convocatoria:</strong> Noviembre - Diciembre 2025</p>
+    <p>Instituto Superior del Profesorado N° 5 "Perito F. Moreno"<br>
+    Ballesteros 907 - Cañada de Gómez</p>
+
+    <form id="formInscripcion">
+
+      <label>Correo</label>
+      <input type="email" required />
+
+      <label>Confirmación de Correo</label>
+      <input type="email" required />
+
+      <label>Fecha de inscripción</label>
+      <input type="date" required />
+
+      <label>Seleccionar carrera - N° de plan</label>
+      <select id="carrera" required>
+        <option value="">Seleccionar carrera</option>
+        <option>Profesorado de Educación Física - Plan N° 696/01</option>
+        <option>Profesorado de Educación Tecnológica - Plan N° 2719/14</option>
+        <option>Profesorado de Educación Inicial - Plan N° 529/09</option>
+        <option>Profesorado de Educación Primaria - Plan N° 528/09</option>
+        <option>Profesorado de Inglés para Educación Secundaria - Plan N° 696/01</option>
+        <option>Profesorado de Educación Secundaria en Biología - Plan N° 2090/15</option>
+        <option>Profesorado de Educación Secundaria en Lengua y Literatura - Plan N° 514/18</option>
+        <option>Profesorado de Educación Secundaria en Ciencias de la Administración - Plan N° 2090/15</option>
+        <option>Profesorado de Educación Especial con orientación en Discapacidad Intelectual - Plan N° 260/03</option>
+        <option>Técnico Superior en Gestión de las Organizaciones - Plan N° 378/16</option>
+      </select>
+
+      <button type="button" class="link-button" onclick="window.open('https://isp5-sfe.infd.edu.ar/sitio/carreras/', '_blank')">📘 Ver Plan de Estudio</button>
+
+      <label>Apellidos completos del estudiante según partida de nacimiento</label>
+      <input type="text" required />
+
+      <label>Nombres completos del estudiante según partida de nacimiento</label>
+      <input type="text" required />
+
+      <label>Número de documento nacional de identidad</label>
+      <input type="number" required />
+
+      <label>Sexo según partida de nacimiento</label>
+      <input type="text" required />
+
+      <label>Fecha de nacimiento</label>
+      <input type="date" required />
+
+      <label>País de nacimiento</label>
+      <input type="text" required />
+
+      <label>Localidad de nacimiento</label>
+      <input type="text" required />
+
+      <label>Nacionalidad</label>
+      <input type="text" required />
+
+      <label>Estado civil</label>
+      <input type="text" />
+
+      <label>¿Perteneces a un pueblo originario?</label>
+      <input type="text" />
+
+      <label>Domicilio actual</label>
+      <input type="text" required />
+
+      <label>Localidad</label>
+      <input type="text" required />
+
+      <label>Teléfono y/o celular</label>
+      <input type="tel" required />
+
+      <label>¿Posee alguna discapacidad?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="discapacidad" value="si" /> Sí</label>
+        <label><input type="radio" name="discapacidad" value="no" checked /> No</label>
+      </div>
+
+      <label>Tipo de discapacidad</label>
+      <select>
+        <option value="">Seleccionar tipo de discapacidad</option>
+        <option>Auditiva - Hipoacusia</option>
+        <option>Auditiva - Sordera</option>
+        <option>Mental - Intelectual</option>
+        <option>Motora - Motora pura</option>
+        <option>Motora - Neuro-Motora</option>
+        <option>Otros - Más de una discapacidad</option>
+        <option>Otros - Trastornos del espectro autista (TEA)</option>
+        <option>Visual - Ceguera</option>
+        <option>Visual - Disminución visual</option>
+        <option>Otros - Dificultades específicas del aprendizaje</option>
+        <option>Otros - Dificultades en el lenguaje</option>
+        <option>Otros - Dificultades en la comunicación</option>
+        <option>Otros - Requiere acciones preventivas (Est. temprana)</option>
+      </select>
+
+      <label>Ocupación</label>
+      <input type="text" />
+
+      <label>Documento escolar que posee</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Constancia de alumno regular del secundario</label>
+        <label><input type="checkbox" /> Constancia de título secundario en trámite</label>
+        <label><input type="checkbox" /> Título secundario</label>
+        <label><input type="checkbox" /> Ninguno</label>
+      </div>
+
+      <p class="info">
+        La documentación necesaria para finalizar la inscripción deberá entregarse personalmente del 18 de noviembre al 13 de diciembre, incluyendo:<br>
+        - Fotocopia autenticada de DNI<br>
+        - Fotocopia autenticada del título secundario o constancia en trámite<br>
+        - Fotocopia autenticada de partida de nacimiento (si no es de Santa Fe)<br>
+        - 2 fotos carnet 3x3<br>
+        - Certificado de buena salud
+      </p>
+
+      <label>Declaración jurada</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" required /> Declaro que los datos consignados son correctos y completos.</label>
+      </div>
+
+      <button type="submit" class="enviar">ENVIAR</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #b5b9ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  background-color: #23327a;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
+button {
+  width: 250px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #2b3ea8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1c2a70;
+}
+
+footer {
+  background-color: #23327a;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #a3a8f5;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+input, select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #777;
+  font-size: 1rem;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.link-button {
+  background-color: #4b5dd0;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: fit-content;
+  align-self: flex-end;
+  transition: background-color 0.3s;
+}
+
+.link-button:hover {
+  background-color: #2b3ea8;
+}
+
+.enviar {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #2b3ea8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enviar:hover {
+  background-color: #1c2a70;
+}
+
+.info {
+  font-size: 0.9rem;
+  background: #c8ccff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Inscripciones - ISP Nº5</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sistema de Inscripciones - ISP Nº5 "Perito F. Moreno"</h1>
+    <img src="logo.png" alt="Logo ISP Nº5" class="logo" />
+  </header>
+
+  <main class="menu-container">
+    <button onclick="irA('inscripciones.html')">Inscripciones ingresantes</button>
+    <button onclick="irA('situacion.html')">Situación de cursada</button>
+    <button onclick="irA('mesas.html')">Mesas de examen</button>
+    <button onclick="irA('mesas-especiales.html')">Mesas especiales</button>
+    <button onclick="irA('homologaciones.html')">Homologaciones</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Instituto Superior del Profesorado N° 5 - Cañada de Gómez</p>
+  </footer>
+
+  <script>
+    function irA(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
+</body>
+</html>

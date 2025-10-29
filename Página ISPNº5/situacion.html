@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Situación de Cursada - ISP Nº5</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Situación de Cursada - ISP Nº5 "Perito F. Moreno"</h1>
+    <a href="index.html" class="back-arrow">&#8592; Volver</a>
+    <img src="logo.png" alt="Logo ISP Nº5" class="logo" />
+  </header>
+
+  <main class="menu-container">
+    <!-- Contenedor del cartel -->
+    <div class="form-container" style="text-align:center;">
+      <h2>Seleccione su año</h2>
+    </div>
+
+    <!-- Contenedor de los botones -->
+    <div class="form-container" style="display:flex; flex-direction:column; gap:1rem; align-items:center;">
+      <button onclick="irA('selec_carr_1º.html')">1er año recursantes</button>
+      <button onclick="irA('selec_carr_2º.html')">2do año</button>
+      <button onclick="irA('selec_carr_3º.html')">3er año</button>
+      <button onclick="irA('selec_carr_4º.html')">4to año</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Instituto Superior del Profesorado N° 5 - Cañada de Gómez</p>
+  </footer>
+  <script>
+    function irA(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
+</body>
+</html>
